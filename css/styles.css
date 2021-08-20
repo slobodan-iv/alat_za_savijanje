@@ -7,8 +7,9 @@ h3, h2, h1 {
 }
 
 p {
-  text-indent: 8%;
+  text-indent: 5%;
   font-style: oblique;
+  padding: 3px;
 }
 
 h1 {
