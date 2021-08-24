@@ -88,3 +88,17 @@ th
 {
     background-color: #b9b9c3;
 }
+
+.space
+{
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+}
