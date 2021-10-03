@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Merriweather|Tangerine|Caveat" rel="stylesheet">
+    <!-- Bootstrap CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Прорачун!</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="Pictures/logo3.png" width="90" height="60" class="d-inline-block align-top rounded" alt="M3Design"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Почетна</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Прорачун</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Моделирање алата за савијање
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="btmup.html">Моделирање "Bottom-Up" склопа</a></li>
+                <li><a class="dropdown-item" href="tpdwn.html">Моделирање "Top-Down" склопа</a></li>
+                <li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">CAM - израда алата</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><!-- navbar -->
+    <!-- container -->
+    <div class="container">
+      <!-- Content here -->
+      <h1>Конструкција и израда алата за савијање.</h1>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-11">
+          <h2>Конструисање алата за савијање - задатак:</h2>
+          <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-postavka-tab" data-bs-toggle="pill" data-bs-target="#v-pills-postavka" type="button" role="tab" aria-controls="v-pills-postavka" aria-selected="true">Поставка задатка</button>
+              <button class="nav-link" id="v-pills-razvijena_duz-tab" data-bs-toggle="pill" data-bs-target="#v-pills-razvijena_duz" type="button" role="tab" aria-controls="v-pills-razvijena_duz" aria-selected="false">Развијена дужина</button>
+              <button class="nav-link" id="v-pills-radijusi-tab" data-bs-toggle="pill" data-bs-target="#v-pills-radijusi" type="button" role="tab" aria-controls="v-pills-radijusi" aria-selected="false">Радијуси савијања</button>
+              <button class="nav-link" id="v-pills-sila_savijanja-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sila_savijanja" type="button" role="tab" aria-controls="v-pills-sila_savijanja" aria-selected="false">Сила савијања</button>
+              <button class="nav-link" id="v-pills-pr_elemenata-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pr_elemenata" type="button" role="tab" aria-controls="v-pills-pr_elemenata" aria-selected="false">Елеменати за савијање</button>
+              <button class="nav-link" id="v-pills-izbor-tab" data-bs-toggle="pill" data-bs-target="#v-pills-izbor" type="button" role="tab" aria-controls="v-pills-izbor" aria-selected="false">Вођице, чауре, рукавци</button>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane accordion-item fade show active" id="v-pills-postavka" role="tabpanel" aria-labelledby="v-pills-postavka-tab">
+                <div>
+                  <img src="Pictures/Teorija/SL_6_21.jpg" width="100%" alt="Поставка задатка">
+                </div>
+                <p>
+                  Конструисати алат за савијање радних предмета према слици ако је материјал: полутврди месинг <img src="Pictures/Teorija/png/Cu60Zn.png" alt="Cu60Zn"> ( <img src="Pictures/Teorija/png/sigma_m.png" alt="&sigma;m"> 400 <img src="Pictures/Teorija/png/N_mm2.png" alt="N/mm2">; <img src="Pictures/Teorija/png/tau_m.png" alt="&tau;m"> 340 <img src="Pictures/Teorija/png/N_mm2.png" alt="N/mm2"> )
+                </p>
+                <p>
+                  Ознака за месинг <img src="Pictures/Teorija/png/Cu60Zn.png" alt="Cu60Zn"> је застарела ознака. Новије ознаке су: <img src="Pictures/Teorija/png/CuZn40.png" alt="CuZn40">, тј. <img src="Pictures/Teorija/png/CW509L.png" alt="CW509L">
+                </p>
+                <p>Потребно је урадити следеће:</p>
+                <ul>
+                  <li>
+                    Одредити развијену дужину радног предмета,  
+                  </li>
+                  <li>
+                    Одређујући максимални и минимални радијус савијања, проверити да ли се савијање може вршити на задани радијус радног предмета,
+                  </li>
+                  <li>
+                    Одредити силу савијања,
+                  </li>
+                  <li>
+                    Прорачунати елементе алата за савијање,
+                  </li>
+                  <li>
+                    Извршити избор стубних вођица, чауре и цилиндричног рукавца,
+                  </li>
+                  <li>
+                    Нацртати склопни цртеж алата,
+                  </li>
+                  <li>
+                    Нацртати радионичке цртеже калупа и тискача.
+                  </li>
+                </ul>
+                <p>
+                  <a href="static/Konstruisanje_alata_za_savijanje.xls">"Excel"-ов прорачун - download</a>
+                </p>
+              </div>
+              <div class="tab-pane accordion-item fade" id="v-pills-razvijena_duz" role="tabpanel" aria-labelledby="v-pills-razvijena_duz-tab">
+                <div>
+                  <img src="Pictures/Teorija/SL_6_21.jpg" width="100%" alt="Поставка задатка">
+                </div>
+                <p>
+                  Развијена дужина се одређује по обрасцу: <img src="Pictures/Teorija/png/L_III.png" alt="Развијена дужина">, где су:
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/li.png" alt="li"> - елементарне равне дужине радног предмета,
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/lj.png" alt="lj"> - елементарне савијене дужине радног предмета,
+                </p>
+                <p>
+                  Према слици задатка, развијена дужина ће се рачунати: <img src="Pictures/Teorija/png/L_zad.png" alt="L=l1+l2+l3+l4+l5">
+                </p>
+                <p>
+                  Са слике се види да је:
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/s=.png" alt="s="> 4 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/R=.png" alt="R="> 10 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/r=R_s=.png" alt="r=R-s="> 6 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/b=.png" alt="b="> 12 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  Развијене дужине:
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/l1.png" alt="l1"> 15 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/l3.png" alt="l3"> 20 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/l2.png" alt="l2"> 12.2 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/ro_d=.png" alt="&rho;d="> 7.76 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/r_s=.png" alt="r/s="> 1.5
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/ksi=.png" alt="&xi;="> 0.44 - табела 38.
+                </p>
+                <div class="space">
+                  <table class="table">
+                    <caption>
+                      Коефицијент &xi; који се одређује на основу односа r/s.
+                    </caption>
+                    <colgroup>
+                      <col>
+                      <col>
+                      <col>
+                      <col>
+                      <col>
+                      <col>
+                      <col>
+                      <col>
+                      <col>
+                    </colgroup>
+                    <thead>
+                        Табела 38:
+                    </thead>
+                    <tbody>
+                      <tr class = "odd">
+                        <th scope="row">r/s</th>
+                        <td>0.1</td>
+                        <td>0.2</td>
+                        <td>0.3</td>
+                        <td>0.4</td>
+                        <td>0.5</td>
+                        <td>0.6</td>
+                        <td>0.7</td>
+                        <td>0.8</td>
+                      </tr>
+                      <tr class = "ksi">
+                        <th scope="row">&xi;</th>
+                        <td>0.23</td>
+                        <td>0.29</td>
+                        <td>0.32</td>
+                        <td>0.35</td>
+                        <td>0.37</td>
+                        <td>0.38</td>
+                        <td>0.39</td>
+                        <td>0.40</td>
+                      </tr>
+                      <tr class = "odd">
+                        <th scope="row">r/s</th>
+                        <td>1.0</td>
+                        <td>1.2</td>
+                        <td>1.5</td>
+                        <td>2.0</td>
+                        <td>3.0</td>
+                        <td>4.0</td>
+                        <td>5.0</td>
+                        <td>10.0</td>
+                      </tr>
+                      <tr class = "ksi">
+                        <th scope="row">&xi;</th>
+                        <td>0.41</td>
+                        <td>0.42</td>
+                        <td>0.44</td>
+                        <td>0.45</td>
+                        <td>0.46</td>
+                        <td>0.47</td>
+                        <td>0.48</td>
+                        <td>0.50</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>
+                  Према томе развијена дужина је: <img src="Pictures/Teorija/png/L_zad.png" alt="L=l1+l2+l3+l4+l5">= 74.4 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+              </div>
+              <div class="tab-pane accordion-item fade" id="v-pills-radijusi" role="tabpanel" aria-labelledby="v-pills-radijusi-tab">
+                <p>
+                  Минимални радијус савијања: <img src="Pictures/Teorija/png/rmin=.png" alt="rmin="> 1.6 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/c=.png" alt="c="> 0.4 - коефицијент табела 39.
+                </p>
+                <div class="space">
+                  <table class="table">
+                    <caption>
+                      Коефицијент c, који се одређује на основу материјала.
+                    </caption>
+                    <colgroup>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <th scope="col">Материјал</th>
+                        <th scope="col">c</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <th scope="row">Č.0210</th>
+                          <td>1.5</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Č.0300</th>
+                          <td>1.8</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Č.0400</th>
+                          <td>2.0</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Č.0145</th>
+                          <td>0.6</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Č.0146</th>
+                          <td>0.5</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Č.0147</th>
+                          <td>0.5</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Č.0147</th>
+                          <td>0.5</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Cu</th>
+                          <td>0.25</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Cu 60 Zn</th>
+                          <td>0.40</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Cu 63 Zn</th>
+                          <td>0.40</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Cu 12 Zn</th>
+                          <td>0.30</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Cu 90 Zn</th>
+                          <td>1.0</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Cu Sn 2</th>
+                          <td>1.2</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Cu Sn 6</th>
+                          <td>0.6</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Ti 35</th>
+                          <td>0.4</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Ti 35</th>
+                          <td>0.5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>
+                  Максимални радијус савијања је: <img src="Pictures/Teorija/png/rmax=.png" alt="rmax="> 637.5 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/sigma_v=.png" alt="ознака напона"> 320 <img src="Pictures/Teorija/png/N_mm2.png" alt="N/mm2"> - напон на граници течења материјала
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/E=.png" alt="E="> 102000 <img src="Pictures/Teorija/png/N_mm2.png" alt="N/mm2"> - модул еластичности
+                </p>
+                <div class="accordion" id="accordionMeh_osobine">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingMeh_osobine">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMeh_osobine" aria-expanded="true" aria-controls="collapseMeh_osobine">
+                        Маханичке особине лимова од тешких метала
+                      </button>
+                    </h2>
+                    <div id="collapseMeh_osobine" class="accordion-collapse collapse" aria-labelledby="headingMeh_osobine" data-bs-parent="#accordionMeh_osobine">
+                    <div class="accordion-body">
+                      <img src="Pictures/Teorija/T_m_osobine.jpg" width="100%" alt="Табела механичких особина">
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  <img src="Pictures/Teorija/png/rmin.png" alt="rmin"> < r < <img src="Pictures/Teorija/png/rmax.png" alt="rmax"> - радијус савијања радног предмета мора да се креће у границама између минималног и максималног радијуса. 
+                </p>
+                <p>
+                  У нашем случају: 1.6 < 6 ( 10 ) < 637.5 те се савијање може вршити на задани радијус.
+                </p>
+              </div>
+              <div class="tab-pane accordion-item fade" id="v-pills-sila_savijanja" role="tabpanel" aria-labelledby="v-pills-sila_savijanja-tab">
+                <div>
+                  <img src="Pictures/Teorija/SL_6_10.jpg" width="100%" alt="Шема сила">
+                </div>
+                <p>
+                  Сила савијања се одређује на основу обрасца: <img src="Pictures/Teorija/png/F_1_3.png" alt="F">
+                </p>
+                <p>
+                  сила савијања је увећана за 30% јер се савијање врши у калупу са избацивачем.
+                </p>
+                <p>
+                  Пошто је полупречник неутралне напонске линије: <img src="Pictures/Teorija/png/ro_n_p=.png" alt="Радијус кривине савијања напонске неутралне линије"> 7.746 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  онда је редуцирани полупречник кривине савијања: <img src="Pictures/Teorija/png/red_polup_eq=.png" alt="Редуцирани полупречник кривине"> 1.936 < 5
+                </p>
+                <p>
+                  те овај проблем спада у подручје чисто пластичног савијања.
+                </p>
+                <p>
+                  Због чега унутрашњи момент савијања рачунамо по обрасцу: 
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/M_p=.png" alt="M"> 30720 <img src="Pictures/Teorija/png/Nmm.png" alt="Nmm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/n=.png" alt="n"> 1.6 - корекциони фактор очврћавања
+                </p>
+                <p>
+                  Ако је: <img src="Pictures/Teorija/png/l_uk_osn=.png" alt="l"> 18 <img src="Pictures/Teorija/png/mm.png" alt="mm">, <img src="Pictures/Teorija/png/rt=.png" alt="rt"> 6 <img src="Pictures/Teorija/png/mm.png" alt="mm">, <img src="Pictures/Teorija/png/rk=.png" alt="rк"> 8 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  онда је сила савијања: <img src="Pictures/Teorija/png/F_1_3=.png" alt="F"> 8874.667 <img src="Pictures/Teorija/png/Njutn.png" alt="N">
+                </p>
+              </div>
+              <div class="tab-pane accordion-item fade" id="v-pills-pr_elemenata" role="tabpanel" aria-labelledby="v-pills-pr_elemenata-tab">
+                <h3>Прорачун радијуса тискача:</h3>
+                <div>
+                  <img src="Pictures/Teorija/SL_6_16.jpg" width="100%" alt="Димензије тискача">
+                </div>
+                <p>
+                  <img src="Pictures/Teorija/png/rt_eq=.png" alt="rt"> 5.76 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <div class="accordion" id="accordion_k">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_k">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_k" aria-expanded="true" aria-controls="collapse_k">
+                        Фактор k
+                      </button>
+                    </h2>
+                    <div id="collapse_k" class="accordion-collapse collapse" aria-labelledby="heading_k" data-bs-parent="#accordion_k">
+                    <div class="accordion-body">
+                      <img src="Pictures/Teorija/SL_6_9.jpg" width="100%" alt="Фактор k">
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  <img src="Pictures/Teorija/png/k=.png" alt="k"> 0.97 коефицијент еластичног исправљања са слике
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/r=R_s=.png" alt="r=R-s="> 6 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/s=.png" alt="s="> 4 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/r_s=.png" alt="r/s="> 1.5
+                </p>
+                <h3>Прорачун радијуса калупа</h3>
+                <p>
+                  радијус калупа се одређује зависно од висине радног предмета h и дебљине лима s (табела 40.)
+                </p>
+                <div>
+                  <img src="Pictures/Teorija/T40.jpg" width="100%" alt="T40">
+                  Табела 40. Подаци за <img src="Pictures/Teorija/png/rk.png" alt="rk"> и <img src="Pictures/Teorija/png/H.png" alt="H">.
+                </div>
+                <p>
+                  <img src="Pictures/Teorija/png/rk=.png" alt="rk="> 8 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <h3>Прорачун висине калупа</h3>
+                <p>
+                  укупна висина калупа (за случај мањих висина радног предмета):
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/Hk_eq_manje.png" alt="Hk=">= 90 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/Hd.png" alt="Hd=">= 50 <img src="Pictures/Teorija/png/mm.png" alt="mm"> висина плоче држача (избацивача)
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/h=.png" alt="h="> 25 <img src="Pictures/Teorija/png/mm.png" alt="mm"> висина радног предмета
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/t=.png" alt="t="> 7 <img src="Pictures/Teorija/png/mm.png" alt="mm"> висина која се бира зависно од дебљине лима.
+                </p>
+                <h3>Прорачун зазора (зрачности)</h3>
+                <p>
+                  Зазор између тискача и калупа се одређује по обрасцу: <img src="Pictures/Teorija/png/f_zracnost.png" alt="f=">= 4.28 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  Где је <img src="Pictures/Teorija/png/cf.png" alt="cf=">= 0.07 коефицијент зрачности и одређује се из табеле 41.
+                </p>
+                <div>
+                  <img src="Pictures/Teorija/T41.jpg" width="100%" alt="T41">
+                  Табела 41. Подаци за <img src="Pictures/Teorija/png/cf.png" alt="cf">.
+                </div>
+                <h3>Прорачун ширине тискача и калупа</h3>
+                <p>
+                  по поставци задатка се види да радни предмет треба да има тачну спољашњу димензију <img src="Pictures/Teorija/png/e_sp=.png" alt="e="> 40 <img src="Pictures/Teorija/png/mm.png" alt="mm"> - онда су:
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/ck_sp.png" alt="ck=">= 40 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/ct_sp.png" alt="ct=">= 31.44 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+              </div>
+              <div class="tab-pane accordion-item fade" id="v-pills-izbor" role="tabpanel" aria-labelledby="v-pills-izbor-tab">
+                <h3>Избор цилиндричног рукавца:</h3>
+                <p>
+                  На основу силе пресе потребне за савијање датог радног предмета, из табеле 37 бира се цилиндрични рукавац (чеп) са следећим димензијама (JUS K.H2.100, JUS K.H2.101 и JUS K.H2.102):
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/d=.png" alt="d="> 25 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/d2=.png" alt="d2="> 34 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/l=.png" alt="l="> 45 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/h1=.png" alt="h1="> 75 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/a=.png" alt="a="> 35 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/b=.png" alt="b="> 4 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/c=.png" alt="c="> 5 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/z=.png" alt="z="> 3 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/d3.png" alt="d3">
+                </p>
+                <p>
+                  Значење појединих величина види се на слици уз табелу 37.
+                </p>
+                <div class="accordion" id="accordion_T37">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_T37">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T37" aria-expanded="true" aria-controls="collapse_T37">
+                        Т37 - избор цилиндричног рукавца
+                      </button>
+                    </h2>
+                    <div id="collapse_T37" class="accordion-collapse collapse" aria-labelledby="heading_T37" data-bs-parent="#accordion_T37">
+                    <div class="accordion-body">
+                      <img src="Pictures/Teorija/T37.jpg" width="100%" alt="T37">
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Стубне вођице и чауре бирају се према табели 34, односно према табели 35.
+                </p>
+                <h3>Избор стубних вођица:</h3>
+                <div class="accordion" id="accordion_T33">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_T33">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T33" aria-expanded="true" aria-controls="collapse_T33">
+                        Т33 - стубне вођице без ојачања
+                      </button>
+                    </h2>
+                    <div id="collapse_T33" class="accordion-collapse collapse" aria-labelledby="heading_T33" data-bs-parent="#accordion_T33">
+                    <div class="accordion-body">
+                      <img src="Pictures/Teorija/T33.jpg" width="100%" alt="T33">
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion" id="accordion_T34">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_T34">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T34" aria-expanded="true" aria-controls="collapse_T34">
+                        Т34 - стубне вођице са ојачањем
+                      </button>
+                    </h2>
+                    <div id="collapse_T34" class="accordion-collapse collapse" aria-labelledby="heading_T34" data-bs-parent="#accordion_T34">
+                    <div class="accordion-body">
+                      <img src="Pictures/Teorija/T34.jpg" width="100%" alt="T34">
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Стубне вођице се раде без ојачања (табела 33) или са ојачањем (табела 34). 
+                </p>
+                <p>
+                  усвајам материјал за стубне вођице Č.1220 и одређујем пречник стуба који преноси оптерећење од силе на доњи носач алата!
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/ReH.png" alt="ReH"> 420 <img src="Pictures/Teorija/png/N_mm2.png" alt="N/mm2">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/d_eq=.png" alt="d="> 5.80 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/Pd=.png" alt="Pd"> 168 <img src="Pictures/Teorija/png/N_mm2.png" alt="N/mm2">
+                </p>
+                <p>
+                  <img src="Pictures/Teorija/png/s=.png" alt="s="> 3
+                </p>
+                <div class="accordion" id="accordion_T2_3">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_T2_3">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T2_3" aria-expanded="true" aria-controls="collapse_T2_3">
+                        Т2.3 - Механичке карактеристике
+                      </button>
+                    </h2>
+                    <div id="collapse_T2_3" class="accordion-collapse collapse" aria-labelledby="heading_T2_3" data-bs-parent="#accordion_T2_3">
+                    <div class="accordion-body">
+                      <img src="Pictures/Teorija/T2_3.jpg" width="100%" alt="T2.3">
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion" id="accordion_T2_5">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_T2_5">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T2_5" aria-expanded="true" aria-controls="collapse_T2_5">
+                        Т2.5 - Степен сигурности
+                      </button>
+                    </h2>
+                    <div id="collapse_T2_5" class="accordion-collapse collapse" aria-labelledby="heading_T2_5" data-bs-parent="#accordion_T2_5">
+                    <div class="accordion-body">
+                      <img src="Pictures/Teorija/T2_5.jpg" width="100%" alt="T2.5">
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion" id="accordion_T_meh_os_celicnih_limova">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_T_meh_os_celicnih_limova">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T_meh_os_celicnih_limova" aria-expanded="true" aria-controls="collapse_T_meh_os_celicnih_limova">
+                        Механичке особине челичних лимова
+                      </button>
+                    </h2>
+                    <div id="collapse_T_meh_os_celicnih_limova" class="accordion-collapse collapse" aria-labelledby="heading_T_meh_os_celicnih_limova" data-bs-parent="#accordion_T_meh_os_celicnih_limova">
+                    <div class="accordion-body">
+                      <img src="Pictures/Teorija/T_m_osobine_cl.jpg" width="100%" alt="Табела механичких особина челичних лимова">
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  усвајам: <img src="Pictures/Teorija/png/d=.png" alt="d="> 30 <img src="Pictures/Teorija/png/mm.png" alt="mm"> и <img src="Pictures/Teorija/png/l=.png" alt="l="> 210 <img src="Pictures/Teorija/png/mm.png" alt="mm">
+                </p>
+                <p>
+                  Пошто клизна лежишта треба подмазивати, на вођицама су израђени канали ширине b за скидање нечистоће. Стубна вођица на горњем крају треба бити заобљена са радијусом r, или да има конусни завршетак, за случај ако горњи део алата у повратном ходу пресе излази изван вођица.
+                </p>
+                <p>
+                  На доњем крају стубне вођице је израђен жлеб ширине f, који служи за учвршћивање вођице помоћу завртња.
+                </p>
+                <p>
+                  Материјал за израду стубних вођица је угљенични челик за цементацију (Č.1120 и Č.1220) а термички се обрађују и брусе са строгим израдним толеранцијама.
+                </p>
+                <p>
+                  Одговарајући отвори за стубне вођице у горњој и доњој плочи алата се буше на координатној бушилици да би се избегла одступања.
+                </p>
+                <p>
+                  Стубне вођице могу да клизе директно у отворима горње плоче, која се обично прави од ливеног  жељеза. Међутим у току рада долази до хабања и трошења (проширивања) отвора у горњој плочи, па се морају постављати нове стубне вођице већег пречника, пошто замена плоче не долази у обзир.
+                </p>
+                <p>
+                  Због тог боље решење представља конструкција алата са чаурама за вођење, које се једноставно утискују у горњу плочу или се утискују и осигуравају завртњем.
+                </p>
+                <h3>Избор чаура:</h3>
+                <p>
+                  У табели 35 дате су стандардне димензије и изглед чаура за вођење.
+                </p>
+                <div class="accordion" id="accordion_T35">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading_T35">
+                      <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_T35" aria-expanded="true" aria-controls="collapse_T35">
+                        Т35 - чауре за вођење
+                      </button>
+                    </h2>
+                    <div id="collapse_T35" class="accordion-collapse collapse" aria-labelledby="heading_T35" data-bs-parent="#accordion_T35">
+                    <div class="accordion-body">
+                      <img src="Pictures/Teorija/T35.jpg" width="100%" alt="T35">
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Материјал за израду чаура може бити:
+                </p>
+                <ul>
+                  <li>
+                    SL 14 до SL 22 за једноставније алате и мање серије,
+                  </li>
+                  <li>
+                    угљенични челик за цементацију (Č.1120 и Č.1220) за квалитетније алате,
+                  </li>
+                  <li>
+                    ливена коситерна бронза (P. CuSn 20 до CuSn 12) за алате са највећим захтевима у погледу тачности.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <nav class="card-header" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">&copy; Slobodan Ivković</li>
+                  <li class="breadcrumb-item"><a href="https://www.linkedin.com/in/slobodan-ivkovic-a08326ba"><img src="Pictures/Icons/linkedin.png" alt="linkedin logo"></a></li>
+                  <li class="breadcrumb-item"><a href="https://twitter.com/slobodan_iv"><img src="Pictures/Icons/twitter.png" alt="twitter logo"></a></li>
+                  <li class="breadcrumb-item"><a href="https://www.youtube.com/user/Mickijedini"><img src="Pictures/Icons/youtube.png" alt="youtube logo"></a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- container -->
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
