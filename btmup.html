@@ -38,7 +38,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item active" href="#">Моделирање "Bottom-Up" склопа</a></li>
-                <li><a class="dropdown-item" href="tpdwn.html">Моделирање "Top-Down" склопа</a></li>
+                <li><a class="dropdown-item disabled" href="tpdwn.html" aria-disabled="true">Моделирање "Top-Down" склопа</a></li>
                 <li>
               </ul>
             </li>
@@ -59,253 +59,237 @@
             <p>
               Код "Bottom-Up" поступка моделирања склопа, моделирамо посебно компоненте, које после убацимо у склоп.
             </p>
-            <h2>Модел и цртеж изратка:</h2>
-            <p>
-              Ознака за месинг <img src="Pictures/Teorija/png/Cu60Zn.png" alt="Cu60Zn"> је застарела ознака. Новије ознаке су: <img src="Pictures/Teorija/png/CuZn40.png" alt="CuZn40">, тј. <img src="Pictures/Teorija/png/CW509L.png" alt="CW509L">
-            </p>
-            <div class="accordion" id="izradak">
+            <div class="accordion" id="btm_up_postupak">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="izradak_crtez">
-                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_izradak_crtez" aria-expanded="true" aria-controls="collapse_izradak_crtez">
-                    Цртеж изратка
+                <h2 class="accordion-header" id="izradak_model_i_crtez">
+                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_izradak_model_i_crtez" aria-expanded="true" aria-controls="collapse_izradak_model_i_crtez">
+                    Модел и цртеж изратка:
                   </button>
                 </h2>
-                <div id="collapse_izradak_crtez" class="accordion-collapse collapse show" aria-labelledby="izradak_crtez" data-bs-parent="#izradak">
+                <div id="collapse_izradak_model_i_crtez" class="accordion-collapse collapse show" aria-labelledby="izradak_model_i_crtez" data-bs-parent="#btm_up_postupak">
                   <div class="accordion-body">
-                    <img src="Pictures/Crtezi/Izradak.jpg" width="100%" alt="Цртеж изратка">
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="izradak_model">
-                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_izradak_model" aria-expanded="true" aria-controls="collapse_izradak_model">
-                    Моделирање изратка
-                  </button>
-                </h2>
-                <div id="collapse_izradak_model" class="accordion-collapse collapse" aria-labelledby="izradak_model" data-bs-parent="#izradak">
-                  <div class="accordion-body">
-                    <div class="card ratio ratio-16x9">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/ErV2UQsIBKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+                      Ознака за месинг <img src="Pictures/Teorija/png/Cu60Zn.png" alt="Cu60Zn"> је застарела ознака. Новије ознаке су: <img src="Pictures/Teorija/png/CuZn40.png" alt="CuZn40">, тј. <img src="Pictures/Teorija/png/CW509L.png" alt="CW509L">
+                    </p>
+                    <ul class="nav nav-tabs" id="izradak_Tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="crtez_izradak-tab" data-bs-toggle="tab" data-bs-target="#crtez_izradak" type="button" role="tab" aria-controls="crtez_izradak" aria-selected="true">Цртеж изратка</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="modeliranje_izratka-tab" data-bs-toggle="tab" data-bs-target="#modeliranje_izratka" type="button" role="tab" aria-controls="modeliranje_izratka" aria-selected="false">Моделирање изратка</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="izradak_TabContent">
+                      <div class="tab-pane show active" id="crtez_izradak" role="tabpanel" aria-labelledby="crtez_izradak-tab">
+                        <img src="Pictures/Crtezi/Izradak.jpg" width="100%" alt="Цртеж изратка">
+                      </div>
+                      <div class="tab-pane" id="modeliranje_izratka" role="tabpanel" aria-labelledby="modeliranje_izratka-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/ErV2UQsIBKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <h2>Модел рукавца:</h2>
-            <p>
-              Материјал рукавца је Č.0545 по старој ознаци (стандарду), а по новом стандарду ознака је: 1.0050 (Е295)
-            </p>
-            <div class="accordion" id="rukavac">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="rukavac_model">
                   <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_rukavac_model" aria-expanded="true" aria-controls="collapse_rukavac_model">
-                    Моделирање рукавца
+                    Моделирање рукавца:
                   </button>
                 </h2>
-                <div id="collapse_rukavac_model" class="accordion-collapse collapse" aria-labelledby="rukavac_model" data-bs-parent="#rukavac">
+                <div id="collapse_rukavac_model" class="accordion-collapse collapse" aria-labelledby="rukavac_model" data-bs-parent="#btm_up_postupak">
                   <div class="accordion-body">
+                    <p>
+                      Материјал рукавца је Č.0545 по старој ознаци (стандарду), а по новом стандарду ознака је: 1.0050 (Е295)
+                    </p>
                     <div class="card ratio ratio-16x9">
                       <iframe width="560" height="315" src="https://www.youtube.com/embed/EnG5Ka1KJyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <h2>Модел и цртеж тискача:</h2>
-            <p>
-              Материјал тискача је Č.4840 по старој ознаци (стандарду), а по новом стандарду ознака је: 1.2063 (145Cr6)
-            </p>
-            <div class="accordion" id="tiskac">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="tiskac_crtez">
-                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_tiskac_crtez" aria-expanded="true" aria-controls="collapse_tiskac_crtez">
-                    Цртеж тискача
+                <h2 class="accordion-header" id="tiskac_crtez_i_model">
+                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_tiskac_crtez_i_model" aria-expanded="true" aria-controls="collapse_tiskac_crtez_i_model">
+                    Модел и цртеж тискача:
                   </button>
                 </h2>
-                <div id="collapse_tiskac_crtez" class="accordion-collapse collapse show" aria-labelledby="tiskac_crtez" data-bs-parent="#tiskac">
+                <div id="collapse_tiskac_crtez_i_model" class="accordion-collapse collapse" aria-labelledby="tiskac_crtez_i_model" data-bs-parent="#btm_up_postupak">
                   <div class="accordion-body">
-                    <img src="Pictures/Crtezi/Tiskac.jpg" width="100%" alt="Цртеж тискача">
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="tiskac_model">
-                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_tiskac_model" aria-expanded="true" aria-controls="collapse_tiskac_model">
-                    Моделирање тискача
-                  </button>
-                </h2>
-                <div id="collapse_tiskac_model" class="accordion-collapse collapse" aria-labelledby="tiskac_model" data-bs-parent="#tiskac">
-                  <div class="accordion-body">
-                    <div class="card ratio ratio-16x9">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/lcYVutCLQKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+                      Материјал тискача је Č.4840 по старој ознаци (стандарду), а по новом стандарду ознака је: 1.2063 (145Cr6)
+                    </p>
+                    <ul class="nav nav-tabs" id="tiskac_Tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="crtez_tiskac-tab" data-bs-toggle="tab" data-bs-target="#crtez_tiskac" type="button" role="tab" aria-controls="crtez_tiskac" aria-selected="true">Цртеж тискача</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="modeliranje_tiskaca-tab" data-bs-toggle="tab" data-bs-target="#modeliranje_tiskaca" type="button" role="tab" aria-controls="modeliranje_tiskaca" aria-selected="false">Моделирање тискача</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="tiskac_TabContent">
+                      <div class="tab-pane show active" id="crtez_tiskac" role="tabpanel" aria-labelledby="crtez_tiskac-tab">
+                        <img src="Pictures/Crtezi/Tiskac.jpg" width="100%" alt="Цртеж тискача">
+                      </div>
+                      <div class="tab-pane" id="modeliranje_tiskaca" role="tabpanel" aria-labelledby="modeliranje_tiskaca-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/lcYVutCLQKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <h2>Модели стубних вођица:</h2>
-            <p>
-              Материјал стубних вођица је Č.1220 по старој ознаци (стандарду), а по новом стандарду ознака је: 1.0401 (C15)
-            </p>
-            <div class="accordion" id="st_vodjica">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="st_vodjica_model">
                   <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_st_vodjica_model" aria-expanded="true" aria-controls="collapse_st_vodjica_model">
-                    Моделирање стубне вођице
+                    Моделирање стубне вођице:
                   </button>
                 </h2>
-                <div id="collapse_st_vodjica_model" class="accordion-collapse collapse" aria-labelledby="st_vodjica_model" data-bs-parent="#st_vodjica">
+                <div id="collapse_st_vodjica_model" class="accordion-collapse collapse" aria-labelledby="st_vodjica_model" data-bs-parent="#btm_up_postupak">
                   <div class="accordion-body">
+                    <p>
+                      Материјал стубних вођица је Č.1220 по старој ознаци (стандарду), а по новом стандарду ознака је: 1.0401 (C15)
+                    </p>
                     <div class="card ratio ratio-16x9">
                       <iframe width="560" height="315" src="https://www.youtube.com/embed/vCV16JLNSN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <h2>Модели чаура:</h2>
-            <p>
-              Материјал чаура је P.CuSn14.01
-            </p>
-            <div class="accordion" id="caura">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="caura_model">
                   <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_caura_model" aria-expanded="true" aria-controls="collapse_caura_model">
-                    Моделирање чауре
+                    Моделирање чауре:
                   </button>
                 </h2>
-                <div id="collapse_caura_model" class="accordion-collapse collapse" aria-labelledby="caura_model" data-bs-parent="#caura">
+                <div id="collapse_caura_model" class="accordion-collapse collapse" aria-labelledby="caura_model" data-bs-parent="#btm_up_postupak">
                   <div class="accordion-body">
+                    <p>
+                      Материјал чаура је P.CuSn14.01
+                    </p>
                     <div class="card ratio ratio-16x9">
                       <iframe width="560" height="315" src="https://www.youtube.com/embed/y6qHnZSRuBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <h2>Модел опруге:</h2>
-            <p>
-              Материјал опруге је Č.0545 по старој ознаци (стандарду), а по новом стандарду ознака је: 1.0050 (Е295)
-            </p>
-            <div class="accordion" id="opruga">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="opruga_model">
                   <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_opruga_model" aria-expanded="true" aria-controls="collapse_opruga_model">
-                    Моделирање опруге
+                    Моделирање опруге:
                   </button>
                 </h2>
-                <div id="collapse_opruga_model" class="accordion-collapse collapse" aria-labelledby="opruga_model" data-bs-parent="#opruga">
+                <div id="collapse_opruga_model" class="accordion-collapse collapse" aria-labelledby="opruga_model" data-bs-parent="#btm_up_postupak">
                   <div class="accordion-body">
+                    <p>
+                      Материјал опруге је Č.0545 по старој ознаци (стандарду), а по новом стандарду ознака је: 1.0050 (Е295)
+                    </p>
                     <div class="card ratio ratio-16x9">
                       <iframe width="560" height="315" src="https://www.youtube.com/embed/7qPE8iA2tv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <h2>Модел и цртеж држача са водиљом опруге:</h2>
-            <p>
-              Материјал држача са водиљом опруге је Č.1120 по старој ознаци (стандарду), а по новом стандарду ознака је: 1.0301 (C10)
-            </p>
-            <div class="accordion" id="drzac_sa_vo">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="drzac_crtez">
                   <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_drzac_crtez" aria-expanded="true" aria-controls="collapse_drzac_crtez">
-                    Цртеж држача
+                    Модел и цртеж држача са водиљом опруге:
                   </button>
                 </h2>
-                <div id="collapse_drzac_crtez" class="accordion-collapse collapse show" aria-labelledby="drzac_crtez" data-bs-parent="#drzac_sa_vo">
+                <div id="collapse_drzac_crtez" class="accordion-collapse collapse" aria-labelledby="drzac_crtez" data-bs-parent="#btm_up_postupak">
                   <div class="accordion-body">
-                    <img src="Pictures/Crtezi/Drzac-izbacivac.jpg" width="100%" alt="Цртеж држача">
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="vo_crtez">
-                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_vo_crtez" aria-expanded="true" aria-controls="collapse_vo_crtez">
-                    Цртеж водиље опруге
-                  </button>
-                </h2>
-                <div id="collapse_vo_crtez" class="accordion-collapse collapse" aria-labelledby="vo_crtez" data-bs-parent="#drzac_sa_vo">
-                  <div class="accordion-body">
-                    <img src="Pictures/Crtezi/Vodilja_opruge.jpg" width="100%" alt="Цртеж водиље опруге">
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="drzac_sa_vo_model">
-                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_drzac_sa_vo_model" aria-expanded="true" aria-controls="collapse_drzac_sa_vo_model">
-                    Моделирање држача са водиљом опруге
-                  </button>
-                </h2>
-                <div id="collapse_drzac_sa_vo_model" class="accordion-collapse collapse" aria-labelledby="drzac_sa_vo_model" data-bs-parent="#drzac_sa_vo">
-                  <div class="accordion-body">
-                    <div class="card ratio ratio-16x9">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/XghqHDUVg20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+                      Материјал држача са водиљом опруге је Č.1120 по старој ознаци (стандарду), а по новом стандарду ознака је: 1.0301 (C10)
+                    </p>
+                    <ul class="nav nav-tabs" id="drzac_sa_vo_Tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="crtez_drzac-tab" data-bs-toggle="tab" data-bs-target="#crtez_drzac" type="button" role="tab" aria-controls="crtez_drzac" aria-selected="true">Цртеж држача</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="crtez_vodilja-tab" data-bs-toggle="tab" data-bs-target="#crtez_vodilja" type="button" role="tab" aria-controls="crtez_vodilja" aria-selected="false">Цртеж водиље опруге</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="modeliranje_drzaca_vo-tab" data-bs-toggle="tab" data-bs-target="#modeliranje_drzaca_vo" type="button" role="tab" aria-controls="modeliranje_drzaca_vo" aria-selected="false">Моделирање држача и водиље</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="drzac_sa_vo_TabContent">
+                      <div class="tab-pane show active" id="crtez_drzac" role="tabpanel" aria-labelledby="crtez_drzac-tab">
+                        <img src="Pictures/Crtezi/Drzac-izbacivac.jpg" width="100%" alt="Цртеж држача">
+                      </div>
+                      <div class="tab-pane" id="crtez_vodilja" role="tabpanel" aria-labelledby="crtez_vodilja-tab">
+                        <img src="Pictures/Crtezi/Vodilja_opruge.jpg" width="100%" alt="Цртеж водиље опруге">
+                      </div>
+                      <div class="tab-pane" id="modeliranje_drzaca_vo" role="tabpanel" aria-labelledby="modeliranje_drzaca_vo-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/XghqHDUVg20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <h2>Модел и цртеж сегмента калупа:</h2>
-            <p>
-              Материјал сегмента калупа је Č.4321 по старој ознаци (стандарду), а по новом стандарду ознака је: 1.7147 (20MnCr5)
-            </p>
-            <div class="accordion" id="seg_kalupa">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="seg_kalupa_crtez">
-                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_seg_kalupa_crtez" aria-expanded="true" aria-controls="collapse_seg_kalupa_crtez">
-                    Цртеж сегмента калупа
+                <h2 class="accordion-header" id="seg_kalupa_crtez_i_model">
+                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_seg_kalupa_crtez_i_model" aria-expanded="true" aria-controls="collapse_seg_kalupa_crtez_i_model">
+                    Модел и цртеж сегмента калупа:
                   </button>
                 </h2>
-                <div id="collapse_seg_kalupa_crtez" class="accordion-collapse collapse show" aria-labelledby="seg_kalupa_crtez" data-bs-parent="#seg_kalupa">
+                <div id="collapse_seg_kalupa_crtez_i_model" class="accordion-collapse collapse" aria-labelledby="seg_kalupa_crtez_i_model" data-bs-parent="#btm_up_postupak">
                   <div class="accordion-body">
-                    <img src="Pictures/Crtezi/Segment_kalupa.jpg" width="100%" alt="Цртеж сегмента калупа">
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="seg_kalupa_model">
-                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#seg_kalupa_model" aria-expanded="true" aria-controls="seg_kalupa_model">
-                    Моделирање сегмента калупа и чивије
-                  </button>
-                </h2>
-                <div id="seg_kalupa_model" class="accordion-collapse collapse" aria-labelledby="seg_kalupa_model" data-bs-parent="#seg_kalupa">
-                  <div class="accordion-body">
-                    <div class="card ratio ratio-16x9">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/jGSxIPFUKII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+                      Материјал сегмента калупа је Č.4321 по старој ознаци (стандарду), а по новом стандарду ознака је: 1.7147 (20MnCr5)
+                    </p>
+                    <ul class="nav nav-tabs" id="segment_kalupa_Tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="crtez_segment_kalupa-tab" data-bs-toggle="tab" data-bs-target="#crtez_segment_kalupa" type="button" role="tab" aria-controls="crtez_segment_kalupa" aria-selected="true">Цртеж сегмента калупа</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="modeliranje_segmenta-tab" data-bs-toggle="tab" data-bs-target="#modeliranje_segmenta" type="button" role="tab" aria-controls="modeliranje_segmenta" aria-selected="false">Моделирање сегмента калупа и чивије</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="segment_kalupa_TabContent">
+                      <div class="tab-pane show active" id="crtez_segment_kalupa" role="tabpanel" aria-labelledby="crtez_segment_kalupa-tab">
+                        <img src="Pictures/Crtezi/Segment_kalupa.jpg" width="100%" alt="Цртеж сегмента калупа">
+                      </div>
+                      <div class="tab-pane" id="modeliranje_segmenta" role="tabpanel" aria-labelledby="modeliranje_segmenta-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/jGSxIPFUKII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <h2>Убацивање компоненти у склоп:</h2>
-            <p>
-              Посебно моделиране компоненте поступком "Bottom-Up" се убацују у склоп
-            </p>
-            <div class="accordion" id="btm_up">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="kor_vo_crtez">
-                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_kor_vo_crtez" aria-expanded="true" aria-controls="collapse_kor_vo_crtez">
-                    Цртеж водиље опруге финално
+                <h2 class="accordion-header" id="btm_up">
+                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_btm_up" aria-expanded="true" aria-controls="collapse_btm_up">
+                    Убацивање компоненти у склоп:
                   </button>
                 </h2>
-                <div id="collapse_kor_vo_crtez" class="accordion-collapse collapse show" aria-labelledby="kor_vo_crtez" data-bs-parent="#btm_up">
+                <div id="collapse_btm_up" class="accordion-collapse collapse" aria-labelledby="btm_up" data-bs-parent="#btm_up_postupak">
                   <div class="accordion-body">
-                    <img src="Pictures/Crtezi/Vodilja_opruge_korekcija.jpg" width="100%" alt="Цртеж водиље опруге">
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="btm_up_model">
-                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_btm_up_model" aria-expanded="true" aria-controls="collapse_btm_up_model">
-                    Моделирање "Bottom-Up" sklopa
-                  </button>
-                </h2>
-                <div id="collapse_btm_up_model" class="accordion-collapse collapse" aria-labelledby="btm_up_model" data-bs-parent="#btm_up">
-                  <div class="accordion-body">
-                    <div class="card ratio ratio-16x9">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/tosjXOi69aA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>
+                      Посебно моделиране компоненте поступком "Bottom-Up" се убацују у склоп
+                    </p>
+                    <ul class="nav nav-tabs" id="btm_up_Tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="crtez_vodilja_finalno-tab" data-bs-toggle="tab" data-bs-target="#crtez_vodilja_finalno" type="button" role="tab" aria-controls="crtez_vodilja_finalno" aria-selected="true">Цртеж водиље опруге финално</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="modeliranje_btm_up-tab" data-bs-toggle="tab" data-bs-target="#modeliranje_btm_up" type="button" role="tab" aria-controls="modeliranje_btm_up" aria-selected="false">Моделирање "Bottom-Up" sklopa</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="btm_up_TabContent">
+                      <div class="tab-pane show active" id="crtez_vodilja_finalno" role="tabpanel" aria-labelledby="crtez_vodilja_finalno-tab">
+                        <img src="Pictures/Crtezi/Vodilja_opruge_korekcija.jpg" width="100%" alt="Цртеж водиље опруге">
+                      </div>
+                      <div class="tab-pane" id="modeliranje_btm_up" role="tabpanel" aria-labelledby="modeliranje_btm_up-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/tosjXOi69aA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
