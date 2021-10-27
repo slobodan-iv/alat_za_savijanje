@@ -178,7 +178,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="opruga_model">
                   <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_opruga_model" aria-expanded="true" aria-controls="collapse_opruga_model">
-                    Моделирање опруге:
+                    Усвајање и моделирање опруге:
                   </button>
                 </h2>
                 <div id="collapse_opruga_model" class="accordion-collapse collapse" aria-labelledby="opruga_model" data-bs-parent="#btm_up_postupak">
@@ -186,8 +186,47 @@
                     <p>
                       Материјал опруге је Č.0545 по старој ознаци (стандарду), а по новом стандарду ознака је: 1.0050 (Е295)
                     </p>
-                    <div class="card ratio ratio-16x9">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/7qPE8iA2tv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <ul class="nav nav-tabs" id="opruga_Tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="opruga_pdf-tab" data-bs-toggle="tab" data-bs-target="#opruga_pdf" type="button" role="tab" aria-controls="opruga_pdf" aria-selected="true">Димензије опруге</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="modeliranje_opruge-tab" data-bs-toggle="tab" data-bs-target="#modeliranje_opruge" type="button" role="tab" aria-controls="modeliranje_opruge" aria-selected="false">Моделирање опруге</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="опруга_TabContent">
+                      <div class="tab-pane show active" id="opruga_pdf" role="tabpanel" aria-labelledby="opruga_pdf-tab">
+                        <div id="carousel_opruge" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel_opruge" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel_opruge" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="Pictures/Teorija/Opruga_str3.jpg" class="d-block w-100" alt="Димензије опруга">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Teorija/Opruga_str9.jpg" class="d-block w-100" alt="Подаци о опругама">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_opruge" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carousel_opruge" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                        <p>
+                          <a href="static/Katalog_opruga.pdf">Каталог опруга - download</a>
+                        </p>
+                      </div>
+                      <div class="tab-pane" id="modeliranje_opruge" role="tabpanel" aria-labelledby="modeliranje_opruge-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/7qPE8iA2tv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
