@@ -179,6 +179,9 @@
                         <button class="nav-link" id="crtez_segment_kalupa_finalno-tab" data-bs-toggle="tab" data-bs-target="#crtez_segment_kalupa_finalno" type="button" role="tab" aria-controls="crtez_segment_kalupa_finalno" aria-selected="false">Цртеж сегмента калупа</button>
                       </li>
                       <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="izbor_opruge_finalno_finalno-tab" data-bs-toggle="tab" data-bs-target="#izbor_opruge_finalno_finalno" type="button" role="tab" aria-controls="izbor_opruge_finalno_finalno" aria-selected="false">Избор опруге</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
                         <button class="nav-link" id="korekcije_u_kontekstu_sklopa-tab" data-bs-toggle="tab" data-bs-target="#korekcije_u_kontekstu_sklopa" type="button" role="tab" aria-controls="korekcije_u_kontekstu_sklopa" aria-selected="false">Корекције у контексту склопа</button>
                       </li>
                     </ul>
@@ -188,6 +191,42 @@
                       </div>
                       <div class="tab-pane" id="crtez_segment_kalupa_finalno" role="tabpanel" aria-labelledby="crtez_segment_kalupa_finalno-tab">
                         <img src="Pictures/Crtezi/Segment_kalupa_korekcija.jpg" width="100%" alt="Цртеж сегмента калупа">
+                      </div>
+                      <div class="tab-pane" id="izbor_opruge_finalno_finalno" role="tabpanel" aria-labelledby="izbor_opruge_finalno_finalno-tab">
+                        <p>
+                          сила савијања: <img src="Pictures/Teorija/png/F_1_3=.png" alt="F"> 8874.67 <img src="Pictures/Teorija/png/Njutn.png" alt="N">
+                        </p>
+                        <p>
+                          сила опруге (сила савијања је увећана за 30%): <img src="Pictures/Teorija/png/F_opruge=.png" alt="F="> 2048 <img src="Pictures/Teorija/png/Njutn.png" alt="N">
+                        </p>
+                        <p>
+                          крутост опруге: <img src="Pictures/Teorija/png/R_opruge=.png" alt="R="> 51.2 <img src="Pictures/Teorija/png/N_po_mm.png" alt="N/mm">, те бирамо опругу крутости <img src="Pictures/Teorija/png/R=.png" alt="R="> 45.9 <img src="Pictures/Teorija/png/N_po_mm.png" alt="N/mm"> (процењујемо да ова опруга задовољава).
+                        </p>
+                        <div id="carousel_opruge" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel_opruge" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel_opruge" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="Pictures/Teorija/Opruga_str3.jpg" class="d-block w-100" alt="Димензије опруга">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Pictures/Teorija/Opruga_str17.jpg" class="d-block w-100" alt="Подаци о опругама">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_opruge" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carousel_opruge" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                        <p>
+                          <a href="static/Katalog_opruga.pdf">Каталог опруга - download</a>
+                        </p>
                       </div>
                       <div class="tab-pane" id="korekcije_u_kontekstu_sklopa" role="tabpanel" aria-labelledby="korekcije_u_kontekstu_sklopa-tab">
                         <div class="card ratio ratio-16x9">
